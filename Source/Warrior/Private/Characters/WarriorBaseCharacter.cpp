@@ -29,3 +29,8 @@ void AWarriorBaseCharacter::PossessedBy(AController* NewController)
 		ensureMsgf(!CharacterStartUpData.IsNull(),TEXT("Forgot to assign start up data to %s"),*GetName());
 	}
 }
+
+UPawnCombatComponent* AWarriorBaseCharacter::GetPawnCombatComponent() const
+{
+	return nullptr;
+}
