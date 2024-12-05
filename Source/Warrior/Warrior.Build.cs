@@ -21,7 +21,8 @@ public class Warrior : ModuleRules
 			"MotionWarping",
 			"Niagara",
 			"NavigationSystem",
-			"MoviePlayer"
+			"MoviePlayer",
+			"UMG"
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
