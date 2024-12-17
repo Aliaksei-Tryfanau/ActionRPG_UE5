@@ -8,6 +8,7 @@
 #include "GenericTeamAgentInterface.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "WarriorGameplayTags.h"
+#include "WarriorDebugHelper.h"
 
 UWarriorAbilitySystemComponent* UWarriorFunctionLibrary::NativeGetWarriorASCFromActor(AActor* InActor)
 {   
@@ -26,7 +27,7 @@ void UWarriorFunctionLibrary::AddGameplayTagToActorIfNone(AActor* InActor, FGame
 	}
 }
 
-void UWarriorFunctionLibrary::RemoveGameplayFromActorIfFound(AActor* InActor, FGameplayTag TagToRemove)
+void UWarriorFunctionLibrary::RemoveGameplayTagFromActorIfFound(AActor* InActor, FGameplayTag TagToRemove)
 {
 	UWarriorAbilitySystemComponent* ASC = NativeGetWarriorASCFromActor(InActor);
 
@@ -124,4 +125,13 @@ FGameplayTag UWarriorFunctionLibrary::ComputeHitReactDirectionTag(AActor* InAtta
 	}
 
 	return WarriorGameplayTags::Shared_Status_HitReact_Front;
+}
+
+bool UWarriorFunctionLibrary::IsValidBlock(AActor* InAttacker, AActor* InDefender)
+{   
+	check(InAttacker && InDefender);
+
+	const float DotResult = FVector::DotProduct(InAttacker->GetActorForwardVector(),InDefender->GetActorForwardVector());
+
+	return DotResult < -0.1f;
 }
