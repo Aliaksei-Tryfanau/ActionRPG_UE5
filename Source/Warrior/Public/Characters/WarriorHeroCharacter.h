@@ -68,6 +68,10 @@ private:
 	void Input_Look(const FInputActionValue& InputActionValue);
 	void Input_AbilityInputPressed(FGameplayTag InInputTag);
 	void Input_AbilityInputReleased(FGameplayTag InInputTag);
+	void Input_SwitchTargetTriggered(const FInputActionValue& InputActionValue);
+	void Input_SwitchTargetCompleted(const FInputActionValue& InputActionValue);
 
 #pragma endregion
+
+	FVector2D SwitchDirection = FVector2D::ZeroVector;
 };
