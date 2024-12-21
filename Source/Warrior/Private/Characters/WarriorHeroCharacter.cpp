@@ -55,6 +55,8 @@ void AWarriorHeroCharacter::PossessedBy(AController* NewController)
 		{
 			LoadedData->GiveToAbilitySystemComponent(WarriorAbilitySystemComponent);
 		}
+
+		WarriorAbilitySystemComponent->OnAbilityInputPressed(WarriorGameplayTags::InputTag_EquipAxe);
 	}
 }
 
