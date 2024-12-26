@@ -8,3 +8,4 @@ Action game prorotype using Unreal's Gameplay Ability System with following feat
 - enemy attacks being blockable/unblockable;
 - enemy hit reacts/deaths done through gameplay abilities/events/cues;
 - advanced eney AI with functionality like circling around the player and enemy summons;
+- pickups for health/rage;

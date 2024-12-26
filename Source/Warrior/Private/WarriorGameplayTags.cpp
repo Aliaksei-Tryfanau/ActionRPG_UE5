@@ -21,6 +21,7 @@ namespace WarriorGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_Toggleable_Rage,"InputTag.Toggleable.Rage");
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_SpecialWeaponAbility_Light,"InputTag.SpecialWeaponAbility.Light");
 	UE_DEFINE_GAMEPLAY_TAG(InputTag_SpecialWeaponAbility_Heavy,"InputTag.SpecialWeaponAbility.Heavy");
+	UE_DEFINE_GAMEPLAY_TAG(InputTag_PickUp_Stones,"InputTag.PickUp.Stones");
 
 	/** Player tags **/
 	UE_DEFINE_GAMEPLAY_TAG(Player_Weapon_Axe,"Player.Weapon.Axe");
@@ -56,6 +57,8 @@ namespace WarriorGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(Player_Cooldown_SpecialWeaponAbility_Light,"Player.Cooldown.SpecialWeaponAbility.Light");
 	UE_DEFINE_GAMEPLAY_TAG(Player_Cooldown_SpecialWeaponAbility_Heavy,"Player.Cooldown.SpecialWeaponAbility.Heavy");
 	UE_DEFINE_GAMEPLAY_TAG(Player_Event_AOE,"Player.Event.AOE");
+	UE_DEFINE_GAMEPLAY_TAG(Player_Ability_PickUp_Stones,"Player.Ability.PickUp.Stones");
+	UE_DEFINE_GAMEPLAY_TAG(Player_Event_ConsumeStones,"Player.Event.ConsumeStones");
 
 	/** Enemy tags **/
 	UE_DEFINE_GAMEPLAY_TAG(Enemy_Weapon,"Enemy.Weapon");
@@ -66,6 +69,7 @@ namespace WarriorGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(Enemy_Status_Unblockable,"Enemy.Status.Unblockable");
 	UE_DEFINE_GAMEPLAY_TAG(Enemy_Ability_SummonEnemies,"Enemy.Ability.SummonEnemies");
 	UE_DEFINE_GAMEPLAY_TAG(Enemy_Event_SummonEnemies,"Enemy.Event.SummonEnemies");
+	UE_DEFINE_GAMEPLAY_TAG(Enemy_Ability_SpawnStone,"Enemy.Ability.SpawnStone");
 
 	/** Shared tags **/
 	UE_DEFINE_GAMEPLAY_TAG(Shared_Event_MeleeHit,"Shared.Event.MeleeHit");
